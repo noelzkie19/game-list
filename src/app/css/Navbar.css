@@ -1,0 +1,80 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navbar */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Push logo to the left and user profile to the right */
+    width: 100%;
+    max-width: 1200px; /* You can adjust this max-width if needed */
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .username {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .user-profile {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .username {
+      font-size: 14px;
+    }
+  }
+  
